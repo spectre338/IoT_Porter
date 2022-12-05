@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "PlatformIO/XMIT_mP_BeeS3_DS18B20"
+		},
+		{
+			"name": "RECV_multiPoint_DS18B20",
+			"path": "PlatformIO/RECV_multiPoint_DS18B20"
+		}
+	],
+	"settings": {}
+}
