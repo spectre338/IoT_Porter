@@ -1,5 +1,6 @@
 // String variable for transmit identification (must be unique)
-String ident = "30:A0";
+String ident = "31:30";
+String mac = "DC:54:75:C0:31:30";
 
 // Addresses of 5 DS18B20 Temp Probes
 uint8_t sensor1[8] = { 0x28, 0x73, 0x53, 0x48, 0xF6, 0x06, 0x3C, 0x13 };

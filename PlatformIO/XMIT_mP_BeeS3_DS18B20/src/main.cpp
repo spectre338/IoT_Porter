@@ -1,10 +1,11 @@
  // Include libraries reqs
+
 #include <WiFi.h>
 #include <esp_now.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <BeeS3.h>
-#include <sensorVARS.h>
+#include "sensorVARS.h"
 
 // Data wire is plugged into port 5 on the Arduino
 #define ONE_WIRE_BUS 10
