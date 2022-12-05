@@ -149,19 +149,19 @@ void loop() {
   Serial.print("");
   
   Serial.print("     Probe 1: ");
-  printTemperature(sensor1);
+  DallasTemperature(sensor1);
   
   Serial.print("     Probe 2: ");
-  printTemperature(sensor2);
+  DallasTemperature(sensor2);
   
   Serial.print("     Probe 3: ");
-  printTemperature(sensor3);
+  DallasTemperature(sensor3);
   
   Serial.print("     Probe 4: ");
-  printTemperature(sensor4);
+  DallasTemperature(sensor4);
   
   Serial.print("     Probe 5: ");
-  printTemperature(sensor5);
+  DallasTemperature(sensor5);
 
 
   
