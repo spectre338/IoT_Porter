@@ -11,10 +11,13 @@
 // Setup BeeS3 instance to communicate with Volt Meter
 BEES3 bees3;
 
-// Setup a oneWire instance to communicate with any OneWire devices
+// String variable for transmit identification (must be unique)
+String ident = "30:A0";
+
+// Setup a oneWire instance to communicate with OneWire devices
 OneWire oneWire(ONE_WIRE_BUS);
  
-// Pass our oneWire reference to Dallas Temperature.
+// Pass the oneWire reference to Dallas Temperature.
 DallasTemperature sensors(&oneWire);
 
 
@@ -28,17 +31,16 @@ uint8_t sensor5[8] = { 0x28, 0x38, 0x3D, 0x48, 0xF6, 0x9D, 0x3C, 0xCD };
 // Variables for battery
 float batt;
  
-// String variable for transmit identification (must be unique)
-String ident = "30:A0";
-
 // Integer for packet sequence number since reset
 int packetCount = 0;
 int pac_value;
+
+// Floats for probe temps
 float probe1;
-float probe2 = sensors.getTempC(sensor2);
-float probe3 = sensors.getTempC(sensor3);
-float probe4 = sensors.getTempC(sensor4);
-float probe5 = sensors.getTempC(sensor5);
+float probe2;
+float probe3;
+float probe4;
+float probe5;
  
 // Responder MAC Address (Replace with the receiver MAC Address)
 uint8_t broadcastAddress[] = {0x0C, 0xB8, 0x15, 0xc2, 0x51, 0x64};
